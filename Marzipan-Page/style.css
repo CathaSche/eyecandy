@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62,5%;
+    box-sizing: border-box;
+
+
+}
+
+html {
+   height: 100%;
+    
+}
+
+
+body {
+    min-height: 100%;
+    background-color: rgb(253, 212, 212);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+    min-width: 100vw;
+    height: 18vh;
+    height: dvh;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0;
+    margin: 0 auto;
+    position: fixed;
+
+    background-color: coral;
+}
+
+
+
+
+.logo {
+    flex: 3;
+    height: 100%;
+    /* min-height: 5rem;
+    max-height: 8rem; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#logo {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.nav-text {
+     /* font-family: "Marigny", sans-serif; */
+    font-family: "Omnes", sans-serif;
+
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.3ch;
+    color:  rgb(190, 255, 228);
+    flex: 1;
+    
+}
+
+.text-align-right {
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––– MAIN ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+main {
+    /* padding: 30rem 0; */
+    margin-top: 20vh;
+    padding: 5rem 0;
+}
+
+.images-container {
+    /* background-color: rgb(248, 230, 177); */
+    margin: auto;
+    max-width: 80%;
+    display: sticky;
+    
+}
+
+.images-all {
+    max-width: 300px;
+    min-width: 20px;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+
+.img-card {
+    transition: all 0.25s;
+}
+.img-card:hover {
+    rotate: 30deg;
+}
+
+@keyframes wiggle-cards {
+    from {
+        transform: rotateZ(-40deg);
+    }
+
+    to {
+        transform: rotateZ(-30deg);
+    }
+}
+
+.wiggle:active {
+    animation: wiggle-cards 0.05s ease-out infinite;
+}
+
+
+
+.textwiggle {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    margin: auto;
+}
+
+
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––– MEDIA ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 2200px) {
+    nav {
+        padding: 3rem 0;
+        height: 18vh;
+    }
+    
+}
+
+
+
+@media (max-width: 1225px) {
+    .flex {
+        gap: 3rem;
+    }
+
+    .images-all {
+        max-width: 250px;
+        min-height: 400px;
+    }
+}
+
+
+@media (max-width: 1120px) {
+    .images-all {
+        max-width: 200px;
+        min-height: 400px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .footer-info-tickle {
+        font-size: 0.1rem;
+        display: none;
+
+    }
+}
+
+@media (max-width: 870px) {
+
+    .flex {
+        gap: none;
+    } 
+
+    .nav-text {
+        visibility: hidden;
+        flex: none;
+        display: none;
+    }
+    
+    .logo {
+        /* flex: 5; */
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    #logo {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .footer-info-tickle {       
+        display: none;
+    }
+
+}
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––– FOOTER ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+footer {
+    background-color: coral;
+    background-color:  rgb(138, 218, 187);
+    min-height: 10rem;
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.by {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 80%;
+
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 1.8ch;
+    color:  rgb(190, 255, 228);
+}
+
+
+.link {
+    text-decoration: none;
+    color:  rgb(190, 255, 228);
+}
+
+.footer-info-tickle {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+
+
